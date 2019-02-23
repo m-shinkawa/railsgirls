@@ -26,6 +26,13 @@
     <%= form.file_field :picture %>
   </div>
 
+
+  <div class="field">
+    <%= form.label :score %>
+    <%= form.select :score, [['★★★★★', 5], ['★★★★', 4], ['★★★', 3], ['★★', 2], ['★', 1]], blank: 'None'%>
+
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
